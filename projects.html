@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Inspire Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Inspire Analysis</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="login-section" class="login-section">
+        <div class="login-container">
+            <h1>Projects Access</h1>
+            <p>Please log in to view projects</p>
+            
+            <div class="login-options">
+                <button class="btn-large" onclick="showGoogleLogin()">Sign in with Google</button>
+                <p class="divider">OR</p>
+                <button class="btn-large" onclick="showPasswordLogin()">Sign in with Password</button>
+            </div>
+            
+            <div id="password-login" class="password-login" style="display:none;">
+                <input type="password" id="password" placeholder="Enter password" class="input-field">
+                <button class="btn" onclick="checkPassword()">Submit</button>
+            </div>
+            
+            <div class="guest-section">
+                <p>Don't have access? <button class="link-btn" onclick="requestAccess()">Request credentials</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects-section" class="container" style="display:none;">
+        <div class="logout-container">
+            <button class="btn" onclick="logout()">Logout</button>
+        </div>
+        
+        <h1>Projects</h1>
+        <div id="projects-list" class="projects-grid"></div>
+        
+        <div class="add-project-section">
+            <h2>Add New Project</h2>
+            <form id="add-project-form" class="project-form">
+                <input type="text" placeholder="Project Name" required>
+                <textarea placeholder="Project Description" required></textarea>
+                <input type="url" placeholder="Google Drive Link" required>
+                <button type="submit" class="btn">Add Project</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Inspire Analysis. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>

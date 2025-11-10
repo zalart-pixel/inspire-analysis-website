@@ -1,0 +1,135 @@
+:root {
+    --navy: #1a1f3a;
+    --gold: #d4af37;
+    --cream: #f5f5f0;
+    --dark-gold: #a68860;
+    --light-navy: #2d3250;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: var(--cream);
+    color: var(--navy);
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--navy);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--gold);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--light-navy) 100%);
+    color: var(--cream);
+    padding: 6rem 2rem;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    color: var(--gold);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: var(--cream);
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--navy);
+    color: var(--cream);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Content Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--gold);
+    color: var(--navy);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--dark-gold);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}

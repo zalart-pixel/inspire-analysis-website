@@ -397,3 +397,377 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ========================================
+   WORLD-CLASS PROFESSIONAL PROFILE STYLES
+   ======================================== */
+
+.profile-hero {
+  position: relative;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000;
+  letter-spacing: -0.02em;
+}
+
+.profile-subtitle {
+  font-size: 1.125rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.profile-cta-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.profile-cta-group a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #0071e3;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 113, 227, 0.15);
+}
+
+.profile-cta-group a:hover {
+  background: #0066cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.25);
+}
+
+/* Highlight Stats Section */
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #fafafa;
+  border-radius: 12px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #0071e3;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Professional Content Sections */
+.profile-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-section {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.content-section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #000;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #0071e3;
+  border-radius: 2px;
+}
+
+/* Experience & Education Cards */
+.experience-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #fafafa;
+  border-radius: 8px;
+  border-left: 3px solid #0071e3;
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+  background: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-title {
+  font-weight: 600;
+  color: #000;
+  font-size: 1rem;
+}
+
+.experience-meta {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.experience-company {
+  color: #0071e3;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.experience-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+}
+
+/* Skills & Expertise */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.skill-category {
+  padding: 1.5rem;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.skill-category-title {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  border-color: #0071e3;
+  color: #0071e3;
+  background: rgba(0, 113, 227, 0.05);
+}
+
+/* Credentials & Achievements */
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.credential-badge {
+  text-align: center;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #0071e3 0%, #0066cc 100%);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.2);
+  transition: all 0.3s ease;
+}
+
+.credential-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 113, 227, 0.3);
+}
+
+.credential-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.credential-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.credential-issuer {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+/* Call to Action */
+.profile-cta {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.profile-cta h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.profile-cta p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.profile-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background: #0071e3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 113, 227, 0.15);
+}
+
+.profile-cta-button:hover {
+  background: #0066cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-header h1 {
+    font-size: 2rem;
+  }
+
+  .profile-subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .credentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-cta-group {
+    flex-direction: column;
+  }
+
+  .profile-cta-group a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
